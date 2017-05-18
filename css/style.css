@@ -13,6 +13,7 @@ header {
 h1 {
     float: left;
     color: blue;
+    font-family: Arial;
 }
 
 nav {
