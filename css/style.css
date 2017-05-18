@@ -7,6 +7,7 @@
 header {
     padding: 20px;
     margin-bottom: 20px;
+    background: lightblue;
 }
 
 h1 {
@@ -26,8 +27,6 @@ nav {
 
 nav .main-menu {
     list-style: none;
-    border: 1px solid gray;
-    border-radius: 2px;
 }
 
 nav .main-menu>li {
@@ -43,7 +42,7 @@ nav .main-menu>li {
 }
 
 .main-menu a:hover {
-    background-color: lightblue;
+    background-color: lightgreen;
 }
 
 .main-menu > li:hover .sub-menu {
