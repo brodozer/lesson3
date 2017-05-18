@@ -91,6 +91,28 @@ img {
     margin: 10px 0;  
 }
 
+.item a:hover {
+    color: #e40e0e;
+}
+
+.item .button {
+    
+}
+
+.item .button a {
+    color: #e40e0e;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid black;
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.item .button a:hover {
+    color: lightgreen;
+}
+
 .item .description {
     margin-bottom: 10px;
     height: 150px;
