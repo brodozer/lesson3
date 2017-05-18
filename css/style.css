@@ -5,7 +5,7 @@
 
 
 body {
-    background: url(../img/background_1.jpg)
+    background: url(http://storage4.static.itmages.ru/i/17/0518/h_1495120610_3058981_ab8130d304.jpg)
 }
 
 header {
@@ -67,6 +67,7 @@ img {
     width: 300px;
     height: 400px;
     margin-bottom: 10px;
+    border: 2px solid gray;
 }
 
 .main {
