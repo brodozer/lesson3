@@ -3,6 +3,7 @@
     margin: 0;
 }
 
+
 header {
     padding: 20px;
     margin-bottom: 20px;
@@ -75,6 +76,7 @@ img {
     margin-bottom: 30px;
     width: 500px;
     text-align: center;
+    background: #7d9ccc;
 }
 
 .item:nth-child(2n) {
