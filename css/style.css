@@ -4,6 +4,10 @@
 }
 
 
+body {
+    background: url(../img/background_1.jpg)
+}
+
 header {
     padding: 20px;
     margin-bottom: 20px;
@@ -128,17 +132,20 @@ img {
 .adres,
 .contacts {
     display: inline-block;
-    text-align: left
+    text-align: left; 
 }
 
 .info {
     text-align: center;
     margin-bottom: 20px;
+    background: lightblue;
+    padding: 5px 0;
+
 }
 
 
 .adres {
-    margin-right: 100px;
+    margin-right: 50px;
 }
 
 
