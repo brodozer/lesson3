@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav .main-menu {
+    list-style: none;
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+
+nav .main-menu>li {
+    display: inline-block;
+    position: relative;
+}
+
+.main-menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.main-menu a:hover {
+    background-color: lightblue;
+}
+
+.main-menu > li:hover .sub-menu {
+    display: block;
+}
+
+.main-menu .sub-menu {
+    list-style: none;
+    position: absolute;
+    border: 1px solid grey;
+    left: 5px;
+    display: none;
+    background: lightyellow;
+}
+
+img {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+.main {
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.item {
+    display: inline-block;
+    border: 2px solid grey;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 500px;
+    text-align: center;
+}
+
+.item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.item a {
+    display: block;
+    text-decoration: none;
+    color: lightblue;
+    margin: 10px 0;  
+}
+
+.item .description {
+    margin-bottom: 10px;
+    height: 150px;
+}
+
+.item .price {
+    font-weight: bold;
+    color: lightgreen;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.adres,
+.contacts {
+    display: inline-block;
+    text-align: left
+}
+
+.info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.adres {
+    margin-right: 100px;
+}
+
+
+footer {
+    background: lightblue;
+    padding: 30px;
+    text-align: center;
+}
