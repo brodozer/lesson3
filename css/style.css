@@ -5,7 +5,7 @@
 
 
 body {
-    background: url(http://storage4.static.itmages.ru/i/17/0518/h_1495120610_3058981_ab8130d304.jpg)
+    background: url(http://storage4.static.itmages.ru/i/17/0518/h_1495120610_3058981_ab8130d304.jpg);
 }
 
 header {
@@ -14,7 +14,7 @@ header {
     background: lightblue;
 }
 
-h1 {
+.logo-name {
     float: left;
     color: blue;
     font-family: Arial;
@@ -63,14 +63,14 @@ nav .main-menu>li {
     background: lightyellow;
 }
 
-img {
+.item-picture {
     width: 300px;
     height: 400px;
     margin-bottom: 10px;
     border: 2px solid gray;
 }
 
-.main {
+main {
     text-align: center;
     vertical-align: bottom;
 }
@@ -100,37 +100,30 @@ img {
     color: #e40e0e;
 }
 
-.item .button {
-    
-}
-
-.item .button a {
+.item-button-buy a {
     color: #e40e0e;
     font-size: 25px;
     font-weight: bold;
-    border: 1px solid black;
     width: 150px;
-    margin: 0 auto;
-    margin-bottom: 10px;
 }
 
-.item .button a:hover {
+.item-button-buy a:hover {
     color: lightgreen;
 }
 
-.item .description {
+.item-description {
     margin-bottom: 10px;
     height: 150px;
 }
 
-.item .price {
+.item-price {
     font-weight: bold;
     color: lightgreen;
     margin-bottom: 10px;
     font-size: 20px;
 }
 
-.adres,
+.address,
 .contacts {
     display: inline-block;
     text-align: left; 
@@ -145,7 +138,7 @@ img {
 }
 
 
-.adres {
+.address {
     margin-right: 50px;
 }
 
