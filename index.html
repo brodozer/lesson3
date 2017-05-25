@@ -10,62 +10,82 @@
 <body>
   <div class="wrapper">
     <header class="clearfix">
-        <h1 class="logo-name">
+        <h1 class="header--logo">
            World Games
         </h1>
-        <nav>
-            <ul class="nav-main--menu">
-                <li class="nav-main--menu-list--item">
-                    <a class="nav-main--menu-list--item-link" 
+        <nav class="header--menu">
+            <ul class="header--menu-main--menu">
+                <li class="main--menu-list--item">
+                    <a class="main--menu-list--item-link" 
                        href="#">
                          Главная
                     </a>
                 </li>
-                <li class="nav-main--menu-list--item">
-                    <a class="nav-main--menu-list--item-link"
+                <li class="main--menu-list--item">
+                    <a class="main--menu-list--item-link"
                        href="#">
                          Магазин
                     </a>
-                       <ul class="nav-main--menu-sub--menu">
-                            <li class="nav-main--menu-sub--menu-list--item">
-                               <a class="nav-main--menu-sub--menu-list--item-link" 
+                       <ul class="main--menu-sub--menu">
+                            <li class="sub--menu-list--item">
+                               <a class="sub--menu-list--item-link" 
                                   href="#">
                                      PS4
                                </a>
                             </li>
-                            <li class="nav-main--menu-sub--menu-list--item">
-                               <a class="nav-main--menu-sub--menu-list--item-link" href="#">
+                            <li class="sub--menu-list--item">
+                               <a class="sub--menu-list--item-link" href="#">
                                     Xbox One
                                </a>
                             </li>
-                           <li class="nav-main--menu-sub--menu-list--item">
-                               <a class="nav-main--menu-sub--menu-list--item-link" 
+                           <li class="sub--menu-list--item">
+                               <a class="sub--menu-list--item-link" 
                                   href="#">
                                      Nintendo Switch
                                </a>
                            </li>
                        </ul>
                 </li>
-                <li class="nav-main--menu-list--item">
-                    <a class="nav-main--menu-list--item-link" 
+                <li class="main--menu-list--item">
+                    <a class="main--menu-list--item-link" 
                        href="#">
                         О нас
                     </a>
                 </li>
-                <li class="nav-main--menu-list--item">
-                    <a class="nav-main--menu-list--item-link" 
+                <li class="main--menu-list--item">
+                    <a class="main--menu-list--item-link" 
                        href="#">
                         Контакты
                     </a>
                 </li>
-                <li class="nav-main--menu-list--item">
-                    <a class="nav-main--menu-list--item-link" 
+                <li class="main--menu-list--item">
+                    <a class="main--menu-list--item-link" 
                     href="admin.html">
                         Administrator
                     </a>
                 </li>
             </ul>
         </nav>
+        
+        <div class="header--login">
+            <form action="#">
+                <ul class="login-form">
+                    <li class="login-form-list--item">
+                        <label class="login-form-label" for="user--name">Имя пользователя</label>
+                        <input class="login-form-input" type="text" id="user--name" placeholder="user">
+                    </li>
+                    <li class="login-form-list--item">
+                        <label class="login-form-label" for="user--password">Пароль пользователя</label>
+                        <input class="login-form-input" type="password" id="user--password" placeholder="********">
+                    </li>
+                    <li class="login-form-list--item">
+                        <button class="login-form-button" type="submit">Вход</button>
+                        <button class="login-form-button--registration" type="button"><a class="button--registration-link" href="#">Регистрация</a></button>
+                    </li>
+                </ul>  
+            </form>
+        </div>
+        
     </header>
        <main class="content">
             <section class="item">

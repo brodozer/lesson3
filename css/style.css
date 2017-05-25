@@ -6,68 +6,103 @@
 .wrapper {
     background: url(http://storage4.static.itmages.ru/i/17/0518/h_1495120610_3058981_ab8130d304.jpg);
 }
-
-.content {
-    text-align: center;
-    vertical-align: bottom;
-}
     
 header {
     padding: 20px;
+    padding-bottom: 0;
     margin-bottom: 20px;
     background: lightblue;
+    text-align: center;
 }
 
-.logo-name {
-    float: left;
+.header--logo {
     color: blue;
     font-family: Arial;
+    width: 120px;
 }
 
-nav {
-    float: right;
+.header--logo, 
+.header--menu,
+.header--login {
+    display: inline-block;
 }
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.nav-main--menu {
+.header--menu-main--menu {
     list-style: none;
 }
 
-.nav-main--menu-list--item {
+.main--menu-list--item {
     display: inline-block;
     position: relative;
 }
 
-.nav-main--menu-list--item-link,
-.nav-main--menu-sub--menu-list--item-link {
+.main--menu-list--item-link,
+.sub--menu-list--item-link {
     display: block;
     padding: 10px 20px;
     text-decoration: none;
     font-size: 18px;
 }
 
-.nav-main--menu-list--item-link:hover,
-.nav-main--menu-sub--menu-list--item-link:hover {
+.main--menu-list--item-link:hover,
+.sub--menu-list--item-link:hover {
     background-color: lightgreen;
 }
 
 
-.nav-main--menu-list--item:hover .nav-main--menu-sub--menu {
+.main--menu-list--item:hover 
+.main--menu-sub--menu {
     display: block;
 } 
 
-.nav-main--menu-sub--menu {
+.main--menu-sub--menu {
     list-style: none;
     position: absolute;
     border: 1px solid grey;
     left: 5px;
     display: none;
     background: lightyellow;
+}
+
+.login-form {
+    width: 360px;
+    list-style-type: none;
+    list-style-position: outside;
+    text-align: left;
+}
+
+.login-form-list--item {
+    margin-bottom: 2px;
+    position: relative;
+}
+
+.login-form-label {
+    width: 150px;
+    float: left;
+}
+
+.login-form-input {
+    width: 200px;
+    height: 20px;
+}
+
+.login-form-button {
+    margin-left: 150px;
+}
+
+.button--registration-link {
+    text-decoration: none;
+    color: black;
+}
+
+.login-form-button--registration,
+.login-form-button {
+    width: 100px;
+}
+
+.content {
+    text-align: center;
+    vertical-align: bottom;
 }
 
 .item-picture {
