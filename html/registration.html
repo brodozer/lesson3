@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+
+  <body>
+   <div class="wrapper">
+    <main>
+        <h1 class="name">Registration Form</h1>
+        <form action="#">
+          <h2 class="form-group-name">Основная информация</h2>
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="first--name">
+                          Имя:
+                </label>
+                <input class="form-group-input" 
+                       type="text" 
+                       id="first--name" 
+                       required>
+            </div>
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="last--name">
+                          Фамилия:
+                </label>
+                <input class="form-group-input" 
+                       type="text" 
+                       id="last--name" 
+                       required>
+            </div>
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="email">
+                           E-mail:
+                </label>
+                <input class="form-group-input" 
+                       type="email"
+                       id="email"
+                       required>
+            </div>
+            <div class="form-group">
+                <label class="form-group-label"
+                       for="usrtel">
+                           Телефон:
+                </label>
+                <input class="form-group-input"  
+                       type="tel"
+                       id="usrtel"
+                       required>
+            </div>
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="item-picture">
+                          Download Avatar:
+                </label>
+                <input class="form-group-input" 
+                       type="file" 
+                       accept=".jpg, .png">
+            </div>
+          <h2 class="form-group-name">Адрес</h2>
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="address">
+                          Адрес
+                </label>
+                <input class="form-group-input" 
+                       type="text" 
+                       id="address" 
+                       required>
+            </div>
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="town">
+                          Город
+                </label>
+                <input class="form-group-input" 
+                       type="text" 
+                       id="town" 
+                       required>
+            </div>
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="country">
+                          Страна
+                </label>
+                <select class="form-group-select" 
+                        name="country"
+                        id="country">
+                    <option value="Kiev">Киев</option>        
+                    <option value="Dnepr">Днепр</option>        
+                    <option value="Lvov">Львов</option>        
+                    <option value="Kharkiv">Харьков</option>        
+                    <option value="Zhitomir">Житомир</option>        
+                    <option value="Lugansk">Луганск</option>        
+                    <option value="Zaporozhye">Запорожье</option>        
+                    <option value="Rovno">Ровно</option>        
+                    <option value="Poltava">Полтава</option>        
+                    <option value="Sumy">Сумы</option>        
+                    <option value="Kherson">Херсон</option>        
+                    <option value="Vinnica">Винница</option>        
+                </select>       
+            </div>
+            <h2 class="form-group-name">Пароль</h2>
+            <div class="form-group"> 
+                <label class="form-group-label"
+                       for="psw">
+                        Пароль
+                </label>
+                <input class="form-group-label"
+                       type="password"
+                       requires>
+            </div>
+            <div class="form-group"> 
+                <label class="form-group-label"
+                       for="psw">
+                        Подтвердите пароль
+                </label>
+                <input class="form-group-label"
+                       type="password"
+                       requires>
+            </div>
+            <button class="form-group-button" 
+                    type="submit">
+                          registration
+            </button>
+        </form>
+    </main>
+  </div>    
+ </body>
+
+</html>
