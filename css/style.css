@@ -3,11 +3,15 @@
     margin: 0;
 }
 
-
-body {
+.wrapper {
     background: url(http://storage4.static.itmages.ru/i/17/0518/h_1495120610_3058981_ab8130d304.jpg);
 }
 
+.content {
+    text-align: center;
+    vertical-align: bottom;
+}
+    
 header {
     padding: 20px;
     margin-bottom: 20px;
@@ -30,31 +34,34 @@ nav {
     clear: both;
 }
 
-nav .main-menu {
+.nav-main--menu {
     list-style: none;
 }
 
-nav .main-menu>li {
+.nav-main--menu-list--item {
     display: inline-block;
     position: relative;
 }
 
-.main-menu a {
+.nav-main--menu-list--item-link,
+.nav-main--menu-sub--menu-list--item-link {
     display: block;
     padding: 10px 20px;
     text-decoration: none;
     font-size: 18px;
 }
 
-.main-menu a:hover {
+.nav-main--menu-list--item-link:hover,
+.nav-main--menu-sub--menu-list--item-link:hover {
     background-color: lightgreen;
 }
 
-.main-menu > li:hover .sub-menu {
-    display: block;
-}
 
-.main-menu .sub-menu {
+.nav-main--menu-list--item:hover .nav-main--menu-sub--menu {
+    display: block;
+} 
+
+.nav-main--menu-sub--menu {
     list-style: none;
     position: absolute;
     border: 1px solid grey;
@@ -68,11 +75,6 @@ nav .main-menu>li {
     height: 400px;
     margin-bottom: 10px;
     border: 2px solid gray;
-}
-
-main {
-    text-align: center;
-    vertical-align: bottom;
 }
 
 .item {
@@ -89,25 +91,26 @@ main {
     margin-right: 0;
 }
 
-.item a {
+.item-name-link, 
+.item-button--buy-link {
     display: block;
     text-decoration: none;
     color: lightblue;
     margin: 10px 0;  
 }
 
-.item a:hover {
+.item-name-link:hover {
     color: #e40e0e;
 }
 
-.item-button-buy a {
+.item-button--buy-link {
     color: #e40e0e;
     font-size: 25px;
     font-weight: bold;
     width: 150px;
 }
 
-.item-button-buy a:hover {
+.item-button--buy-link:hover {
     color: lightgreen;
 }
 
@@ -123,25 +126,37 @@ main {
     font-size: 20px;
 }
 
-.address,
-.contacts {
+.info-address,
+.info-contacts {
     display: inline-block;
-    text-align: left; 
+    
 }
 
 .info {
-    text-align: center;
     margin-bottom: 20px;
     background: lightblue;
     padding: 5px 0;
+}
 
+.info-address {
+    margin-left: 150px;
+    margin-right: 400px;
 }
 
 
-.address {
-    margin-right: 50px;
+.info-address-list,
+.info-contacts-list {
+    list-style: none;
 }
 
+.info-contacts-list-link {
+    text-decoration: none;
+    color: black;
+}
+
+.info-contacts-list-link:hover {
+    color: blue;
+}
 
 footer {
     background: lightblue;
