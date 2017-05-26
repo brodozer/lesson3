@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Registration Form</title>
+    <link rel="stylesheet" href="../css/registration.css">
 </head>
 
   <body>
@@ -19,6 +20,7 @@
                 <input class="form-group-input" 
                        type="text" 
                        id="first--name" 
+                       placeholder="First Name"
                        required>
             </div>
             <div class="form-group">
@@ -29,6 +31,7 @@
                 <input class="form-group-input" 
                        type="text" 
                        id="last--name" 
+                       placeholder="Last Name"
                        required>
             </div>
             <div class="form-group">
@@ -39,6 +42,7 @@
                 <input class="form-group-input" 
                        type="email"
                        id="email"
+                       placeholder="user@gmail.com"
                        required>
             </div>
             <div class="form-group">
@@ -49,6 +53,7 @@
                 <input class="form-group-input"  
                        type="tel"
                        id="usrtel"
+                       placeholder="+38 (0xx) xxx xx xx"
                        required>
             </div>
             <div class="form-group">
@@ -69,6 +74,7 @@
                 <input class="form-group-input" 
                        type="text" 
                        id="address" 
+                       placeholder="ул. Менделеева 5/16"
                        required>
             </div>
             <div class="form-group">
@@ -79,6 +85,7 @@
                 <input class="form-group-input" 
                        type="text" 
                        id="town" 
+                       placeholder="Рубежное"
                        required>
             </div>
             <div class="form-group">
@@ -89,18 +96,18 @@
                 <select class="form-group-select" 
                         name="country"
                         id="country">
-                    <option value="Kiev">Киев</option>        
-                    <option value="Dnepr">Днепр</option>        
-                    <option value="Lvov">Львов</option>        
-                    <option value="Kharkiv">Харьков</option>        
-                    <option value="Zhitomir">Житомир</option>        
-                    <option value="Lugansk">Луганск</option>        
-                    <option value="Zaporozhye">Запорожье</option>        
-                    <option value="Rovno">Ровно</option>        
-                    <option value="Poltava">Полтава</option>        
-                    <option value="Sumy">Сумы</option>        
-                    <option value="Kherson">Херсон</option>        
-                    <option value="Vinnica">Винница</option>        
+                    <option value="Ukraine">Украина</option>        
+                    <option value="Poland">Польша</option>        
+                    <option value="Belarus">Беларусь</option>        
+                    <option value="Latvia">Латвия</option>        
+                    <option value="Belgium">Бельгия</option>        
+                    <option value="Croatia">Хорватия</option>        
+                    <option value="Russia">Россия</option>        
+                    <option value="Italy">Италия</option>        
+                    <option value="Spain">Испания</option>        
+                    <option value="Bulgaria">Болгария</option>        
+                    <option value="United-Kingdom">Великобритания</option>        
+                    <option value="Finland">Финляндия</option>        
                 </select>       
             </div>
             <h2 class="form-group-name">Пароль</h2>
@@ -109,17 +116,21 @@
                        for="psw">
                         Пароль
                 </label>
-                <input class="form-group-label"
+                <input class="form-group-input"
                        type="password"
+                       id="psw"
+                       placeholder="**********"
                        requires>
             </div>
             <div class="form-group"> 
                 <label class="form-group-label"
-                       for="psw">
+                       for="confirm-psw">
                         Подтвердите пароль
                 </label>
-                <input class="form-group-label"
+                <input class="form-group-input"
                        type="password"
+                       id="confirm-psw"
+                       placeholder="**********"
                        requires>
             </div>
             <button class="form-group-button" 

@@ -15,16 +15,16 @@ header {
     text-align: center;
 }
 
-.header--logo {
-    color: blue;
-    font-family: Arial;
-    width: 120px;
-}
-
 .header--logo, 
 .header--menu,
 .header--login {
     display: inline-block;
+}
+
+.header--logo {
+    color: blue;
+    font-family: Arial;
+    width: 120px;
 }
 
 .header--menu-main--menu {
