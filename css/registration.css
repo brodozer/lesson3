@@ -18,14 +18,14 @@ main {
     background: lightblue;
 }
 
-.name,
+.form--name,
 .form-group-name {
     font-style: italic;
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-.name {
+.form--name {
     border-bottom: 2px solid black;
      text-align: center;
 }
