@@ -18,7 +18,7 @@ main {
     background: lightblue;
 }
 
-.name,
+.form--name,
 .form-group-name {
     font-style: italic;
     font-size: 20px;
