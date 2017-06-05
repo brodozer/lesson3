@@ -9,7 +9,7 @@
 
 <body>
   <div class="wrapper">
-    <header>
+    <header class="clearfix">
         <h1 class="header--logo">
            World Games
         </h1>
@@ -28,20 +28,30 @@
                     </a>
                        <ul class="main--menu-sub--menu">
                             <li class="sub--menu-list--item">
-                               <a class="sub--menu-list--item-link" 
+                               <a class="sub--menu-list--item-link-ps4" 
                                   href="#">
                                      PS4
+                                  <img class="ps4-logo" 
+                                       src="http://storage8.static.itmages.ru/i/17/0605/h_1496696388_7725748_9efcff8e03.png" 
+                                       alt="ps4-logo">
                                </a>
                             </li>
                             <li class="sub--menu-list--item">
-                               <a class="sub--menu-list--item-link" href="#">
+                               <a class="sub--menu-list--item-link-xbox" 
+                                  href="#">
                                     Xbox One
+                               <img class="xbox-logo" 
+                                    src="http://storage9.static.itmages.ru/i/17/0605/h_1496696389_3024659_b05ac03f59.png" 
+                                    alt="xbox-logo">     
                                </a>
                             </li>
                            <li class="sub--menu-list--item">
-                               <a class="sub--menu-list--item-link" 
+                               <a class="sub--menu-list--item-link-nintendo" 
                                   href="#">
                                      Nintendo Switch
+                               <img class="nintendo-logo" 
+                                    src="http://storage8.static.itmages.ru/i/17/0605/h_1496696388_9564179_8db00e1845.png" 
+                                    alt="nintendo-logo">         
                                </a>
                            </li>
                        </ul>
@@ -63,6 +73,20 @@
                     href="admin.html">
                         Administrator
                     </a>
+                    	<ul class="main--menu-admin--menu">
+                    		<li class="admin--menu-list--item">
+                    			<a class="admin--menu-list--item-link" 
+                    			   href="#">
+                    			   Add Item
+                    			</a>
+                    		</li>
+                    		<li class="admin--menu-list--item">
+                    			<a class="admin--menu-list--item-link" 
+                                   href="#">
+                                   List Item
+                                </a>
+                            </li>
+                    	</ul>
                 </li>
             </ul>
         </nav>
@@ -104,6 +128,11 @@
                     </li>
                 </ul>  
             </form>
+        </div>
+        <div class="header--cart">
+        	<a class="cart-link" href="#">
+        	   Корзина
+        	</a>
         </div>
     </header>
     <main>

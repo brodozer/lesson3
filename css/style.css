@@ -8,17 +8,19 @@
 }
     
 header {
+	display: flex;
+	justify-content: center;
     padding: 20px;
     padding-bottom: 0;
     margin-bottom: 20px;
     background: lightblue;
-    text-align: center;
 }
 
 .header--logo, 
 .header--menu,
-.header--login {
-    display: inline-block;
+.header--login,
+.header--cart {
+    margin-right: 15px;
 }
 
 .header--logo {
@@ -38,11 +40,15 @@ header {
 
 .main--menu-list--item-link,
 .main--menu-list--item-link--head,
-.sub--menu-list--item-link {
+.sub--menu-list--item-link-ps4,
+.sub--menu-list--item-link-xbox,
+.sub--menu-list--item-link-nintendo,
+.admin--menu-list--item-link {
     display: block;
     padding: 10px 20px;
     text-decoration: none;
     font-size: 18px;
+	text-align: left;
 }
 
 .main--menu-list--item-link--head {
@@ -50,23 +56,91 @@ header {
 }
 
 .main--menu-list--item-link:hover,
-.sub--menu-list--item-link:hover {
+.admin--menu-list--item-link:hover {
     background-color: lightgreen;
 }
 
+.sub--menu-list--item-link-ps4:hover {
+	background-color: blue;
+	color: white;
+}
+
+.sub--menu-list--item-link-ps4:hover 
+.ps4-logo {
+	transform: scale(1.8, 1.8);
+}
+
+.sub--menu-list--item-link-xbox:hover {
+	background-color: green;
+	color: white;
+}
+
+.sub--menu-list--item-link-xbox:hover 
+.xbox-logo {
+	transform: scale(1.7, 1.7);
+}
+
+.sub--menu-list--item-link-nintendo:hover {
+	background-color: red;
+	color: white;
+}
+
+.sub--menu-list--item-link-nintendo:hover  
+.nintendo-logo {
+	transform: scale(1.4, 1.4);
+}
 
 .main--menu-list--item:hover 
 .main--menu-sub--menu {
-    display: block;
+    visibility: visible;
+	top: 100%;
+	opacity: 1;
 } 
 
+.main--menu-list--item:hover 
+.main--menu-admin--menu {
+	visibility: visible;
+	top: 100%;
+	opacity: 1;
+}
+
 .main--menu-sub--menu {
-    list-style: none;
+	width: 200px;
+}
+
+.main--menu-sub--menu,
+.main--menu-admin--menu {
+	list-style: none;
     position: absolute;
     border: 1px solid grey;
     left: 5px;
-    display: none;
+	visibility: hidden;
+    transition: all 300ms ease;
+	opacity: 0;
+	top: 400%;
     background: lightyellow;
+}
+
+.ps4-logo,
+.xbox-logo,
+.nintendo-logo {
+	position: absolute;
+	width: 25px;
+}
+
+.xbox-logo {
+	top: 50px;
+	right: 10px;
+}
+
+.nintendo-logo {
+	bottom: 10px;
+	right: 10px;
+}
+
+.ps4-logo {
+	top: 10px;
+	right: 10px;
 }
 
 .login-form {
@@ -105,9 +179,26 @@ header {
     width: 100px;
 }
 
+.cart-link {
+	display: block;
+	padding: 60px 20px 20px;
+	text-decoration: none;
+	text-align: center;
+	background: url(http://storage8.static.itmages.ru/i/17/0605/h_1496696388_7047286_2ef2050a5b.png) 
+		        no-repeat 
+		        center 
+		        top;	
+	background-size: 50px 70px;
+}
+
+.cart-link:hover {
+	transform: scale(1.5,1.5);
+}
+
 main {
-    text-align: center;
-    vertical-align: bottom;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .item-picture {
@@ -118,17 +209,11 @@ main {
 }
 
 .item {
-    display: inline-block;
     border: 2px solid grey;
-    margin-right: 30px;
     margin-bottom: 30px;
     width: 500px;
     text-align: center;
     background: #7d9ccc;
-}
-
-.item:nth-child(2n) {
-    margin-right: 0;
 }
 
 .item-name-link, 
@@ -156,7 +241,7 @@ main {
 
 .item-description {
     margin-bottom: 10px;
-    height: 150px;
+    height: 100px;
 }
 
 .item-price {
