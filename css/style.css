@@ -9,33 +9,26 @@
     
 header {
 	display: flex;
-	justify-content: center;
-    padding: 20px;
-    padding-bottom: 0;
-    margin-bottom: 20px;
+	justify-content: space-between;
+    padding-top: 2px;
+	margin-bottom: 20px;
     background: lightblue;
-}
-
-.header--logo, 
-.header--menu,
-.header--login,
-.header--cart {
-    margin-right: 15px;
 }
 
 .header--logo {
     color: blue;
     font-family: Arial;
-    width: 120px;
 }
 
 .header--menu-main--menu {
     list-style: none;
+	display: flex;
 }
 
 .main--menu-list--item {
-    display: inline-block;
+    align-items: baseline;
     position: relative;
+	margin-right: 5px;
 }
 
 .main--menu-list--item-link,
@@ -181,18 +174,19 @@ header {
 
 .cart-link {
 	display: block;
-	padding: 60px 20px 20px;
+	padding: 50px 10px 10px;
 	text-decoration: none;
 	text-align: center;
+	color: blue;
 	background: url(http://storage8.static.itmages.ru/i/17/0605/h_1496696388_7047286_2ef2050a5b.png) 
 		        no-repeat 
 		        center 
 		        top;	
-	background-size: 50px 70px;
+	background-size: 50px 60px;
 }
 
 .cart-link:hover {
-	transform: scale(1.5,1.5);
+	transform: scale(1.1,1.1);
 }
 
 main {
