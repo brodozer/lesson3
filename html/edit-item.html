@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Item</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+ <body>
+  <div class="wrapper">
+    <main>
+        <h1 class="form-name">Edit Item</h1>
+        <form action="#">
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="title">
+                          Name Item:
+                </label>
+                <input class="form-group-input" 
+                       type="text" 
+                       id="title" 
+                       required>
+            </div>
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="item-picture">
+                          Download Image:
+                </label>
+                <input type="file" 
+                       accept=".jpg, .png">
+            </div>
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="video">
+                          Added video
+                </label>
+                <input class="form-group-input" 
+                       type="url" 
+                       id="video"
+                       required>
+            </div> 
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="type-console">
+                          Платформа
+                </label>
+                <input class="form-group-input" 
+                       type="text" 
+                       id="type-console"
+                       required>
+            </div> 
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="developer">
+                          Разработчик
+                </label>
+                <input class="form-group-input" 
+                       type="text" 
+                       id="developer"
+                       required>
+            </div>   
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="genre">
+                          Жанр
+                </label>
+                <input class="form-group-input" 
+                       type="text" 
+                       id="genre"
+                       required>
+            </div>   
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="pegi-info">
+                          Возрастные ограничения
+                </label>
+                <input class="form-group-input" 
+                       type="number" 
+                       id="pegi-info"
+                       required>
+            </div>   
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="date-release">
+                          Дата резиза
+                </label>
+                <input class="form-group-input" 
+                       type="date" 
+                       id="date-release"
+                       required>
+            </div>   
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="language">
+                          Язык
+                </label>
+                <input class="form-group-input" 
+                       type="text" 
+                       id="language"
+                       required>
+            </div>     
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="description">
+                          Description Item:
+                </label>
+                <textarea class="form-group-textarea" 
+                          name="description-item" 
+                          id="description" 
+                          cols="50" rows="20" 
+                          minlength="100" 
+                          required>  
+                </textarea>
+            </div>
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="price">
+                          Price:
+                </label>
+                <input class="form-group-input" 
+                       type="number" 
+                       id="price" 
+                       required>
+            </div>
+            <button class="form-group-button" 
+                    type="submit">
+                          save
+            </button>
+        </form>
+    </main>
+  </div>    
+</body>
+
+</html>
+
+
