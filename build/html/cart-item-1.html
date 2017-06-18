@@ -3,13 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Cart Page</title>
+    <meta name="viewport"
+    	  width="device-width"
+    	  initial-scale="1">
+    <title>Cart Horizon Zero Down PS4</title>
     <link rel="stylesheet" href="../css/cart.css">
 </head>
 
 <body>
   <div class="wrapper">
-    <header class="clearfix">
+    <header>
         <h1 class="header--logo">
            World Games
         </h1>
@@ -28,30 +31,21 @@
                     </a>
                        <ul class="main--menu-sub--menu">
                             <li class="sub--menu-list--item">
-                               <a class="sub--menu-list--item-link-ps4" 
+                               <a class="sub--menu-list--item-link" 
                                   href="#">
-                                     PS4
-                                  <img class="ps4-logo" 
-                                       src="http://storage8.static.itmages.ru/i/17/0605/h_1496696388_7725748_9efcff8e03.png" 
-                                       alt="ps4-logo">
+                                     Sony PS4
                                </a>
                             </li>
                             <li class="sub--menu-list--item">
-                               <a class="sub--menu-list--item-link-xbox" 
+                               <a class="sub--menu-list--item-link" 
                                   href="#">
                                     Xbox One
-                               <img class="xbox-logo" 
-                                    src="http://storage9.static.itmages.ru/i/17/0605/h_1496696389_3024659_b05ac03f59.png" 
-                                    alt="xbox-logo">     
                                </a>
                             </li>
                            <li class="sub--menu-list--item">
-                               <a class="sub--menu-list--item-link-nintendo" 
+                               <a class="sub--menu-list--item-link" 
                                   href="#">
-                                     Nintendo Switch
-                               <img class="nintendo-logo" 
-                                    src="http://storage8.static.itmages.ru/i/17/0605/h_1496696388_9564179_8db00e1845.png" 
-                                    alt="nintendo-logo">         
+                                     Nintendo Switch      
                                </a>
                            </li>
                        </ul>
@@ -76,13 +70,13 @@
                     	<ul class="main--menu-admin--menu">
                     		<li class="admin--menu-list--item">
                     			<a class="admin--menu-list--item-link" 
-                    			   href="html/add-item.html">
+                    			   href="add-item.html">
                     			   Add Item
                     			</a>
                     		</li>
                     		<li class="admin--menu-list--item">
                     			<a class="admin--menu-list--item-link" 
-                                   href="html/list-item.html">
+                                   href="list-item.html">
                                    List Item
                                 </a>
                             </li>
@@ -94,24 +88,14 @@
             <form action="#">
                 <ul class="login-form">
                     <li class="login-form-list--item">
-                        <label class="login-form-label" 
-                               for="user--name">
-                                   Имя пользователя
-                        </label>
                         <input class="login-form-input" 
                                type="text" 
-                               id="user--name" 
-                               placeholder="user">
+                               placeholder="user--name">
                     </li>
                     <li class="login-form-list--item">
-                        <label class="login-form-label" 
-                               for="user--password">
-                                   Пароль пользователя
-                        </label>
-                        <input class="login-form-input" 
+                         <input class="login-form-input" 
                                type="password" 
-                               id="user--password" 
-                               placeholder="********">
+                               placeholder="user--password">
                     </li>
                     <li class="login-form-list--item">
                         <button class="login-form-button" 
@@ -121,7 +105,7 @@
                         <button class="login-form-button--registration" 
                                 type="button">
                                     <a class="button--registration-link" 
-                                       href="html/registration.html">
+                                       href="registration.html">
                                             Регистрация
                                     </a>
                         </button>
@@ -163,11 +147,11 @@
     		<tr class="table--cart-row">
     			<td class="table--cart-data">
     				<img class="table-item--image"
-   				         src="" 
-    				     alt="">
+   				         src="http://storage1.static.itmages.ru/i/17/0516/h_1494953760_1208745_c4391c2ce1.jpeg" 
+    				     alt="horizon zero down ps4">
     			</td>
     			<td class="table--cart-data">
-    				-
+    				Horizon Zero Down PS4
     			</td>
     			<td class="table--cart-data">
     				<ul class="quantity-list">
@@ -177,10 +161,10 @@
     				</ul>
     			</td>
     			<td class="table--cart-data">
-    				-
+    				1370 грн
     			</td>
     			<td class="table--cart-data">
-    				-
+    				1370 грн
     			</td>
     			<td class="table--cart-data">
     				<button class="table-button--delete">	
@@ -199,41 +183,45 @@
     		<div class="form-group">
                 <label class="form-group-label" 
                        for="first--name">
-                       Имя:
+                          Имя:
                 </label>
                 <input class="form-group-input" 
                        type="text" 
                        id="first--name" 
+                       value="Александр" 
                        required>
             </div>
             <div class="form-group">
                 <label class="form-group-label" 
                        for="last--name">
-                       Фамилия:
+                          Фамилия:
                 </label>
                 <input class="form-group-input" 
                        type="text" 
                        id="last--name" 
+                       value="Перепелица"
                        required>
             </div>
             <div class="form-group">
                 <label class="form-group-label" 
                        for="email">
-                       E-mail:
+                           E-mail:
                 </label>
                 <input class="form-group-input" 
                        type="email"
                        id="email"
+                       value="perepelitsa.alex@gmail.com"
                        required>
             </div>
             <div class="form-group">
                 <label class="form-group-label"
                        for="usrtel">
-                       Телефон:
+                           Телефон:
                 </label>
                 <input class="form-group-input"  
                        type="tel"
                        id="usrtel"
+                       value="+380934109304"
                        required>
             </div>
             <h2 class="delivery-payment">
@@ -267,16 +255,18 @@
                 <input class="form-group-input" 
                        type="text" 
                        id="town" 
+                       value="Рубежное" 
                        required>
             </div>
             <div class="form-group">
                 <label class="form-group-label" 
                        for="warehouse">
-                       Отделение/склад 
+                          Отделение/склад 
                 </label>
                 <input class="form-group-input" 
                        type="number" 
-                       id="warehouse"  
+                       id="warehouse" 
+                       value="2" 
                        required>
             </div>
             <div class="form-group">
@@ -284,7 +274,7 @@
                 	Выберите способ оплаты:
                 </span>
             	<label for="payment-card">
-            		На карту банка
+            		Приват 24
 				</label>        
             	<input type="radio" 
             	       name="payment"
@@ -301,7 +291,7 @@
             </div>
             <button class="form-group-button"
             		type="submit">
-            	    Оформить покупку
+            	Оформить
             </button>
     	</form>
     </main>

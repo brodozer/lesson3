@@ -3,20 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+    	  width="device-width"
+    	  initial-scale="1">
     <title>World Games</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
   <div class="wrapper">
-    <header class="clearfix">
+    <header>
         <h1 class="header--logo">
            World Games
         </h1>
         <nav class="header--menu">
             <ul class="header--menu-main--menu">
                 <li class="main--menu-list--item">
-                    <a class="main--menu-list--item-link--head" 
+                    <a class="main--menu-list--item-link--active" 
                        href="index.html">
                          Главная
                     </a>
@@ -28,30 +31,21 @@
                     </a>
                        <ul class="main--menu-sub--menu">
                             <li class="sub--menu-list--item">
-                               <a class="sub--menu-list--item-link-ps4" 
+                               <a class="sub--menu-list--item-link" 
                                   href="#">
-                                     PS4
-                                  <img class="ps4-logo" 
-                                       src="http://storage8.static.itmages.ru/i/17/0605/h_1496696388_7725748_9efcff8e03.png" 
-                                       alt="ps4-logo">
+                                     Sony PS4
                                </a>
                             </li>
                             <li class="sub--menu-list--item">
-                               <a class="sub--menu-list--item-link-xbox" 
+                               <a class="sub--menu-list--item-link" 
                                   href="#">
                                     Xbox One
-                               <img class="xbox-logo" 
-                                    src="http://storage9.static.itmages.ru/i/17/0605/h_1496696389_3024659_b05ac03f59.png" 
-                                    alt="xbox-logo">     
                                </a>
                             </li>
                            <li class="sub--menu-list--item">
-                               <a class="sub--menu-list--item-link-nintendo" 
+                               <a class="sub--menu-list--item-link" 
                                   href="#">
-                                     Nintendo Switch
-                               <img class="nintendo-logo" 
-                                    src="http://storage8.static.itmages.ru/i/17/0605/h_1496696388_9564179_8db00e1845.png" 
-                                    alt="nintendo-logo">         
+                                     Nintendo Switch      
                                </a>
                            </li>
                        </ul>
@@ -76,13 +70,13 @@
                     	<ul class="main--menu-admin--menu">
                     		<li class="admin--menu-list--item">
                     			<a class="admin--menu-list--item-link" 
-                    			   href="html/add-item.html">
+                    			   href="add-item.html">
                     			   Add Item
                     			</a>
                     		</li>
                     		<li class="admin--menu-list--item">
                     			<a class="admin--menu-list--item-link" 
-                                   href="html/list-item.html">
+                                   href="list-item.html">
                                    List Item
                                 </a>
                             </li>
@@ -94,24 +88,14 @@
             <form action="#">
                 <ul class="login-form">
                     <li class="login-form-list--item">
-                        <label class="login-form-label" 
-                               for="user--name">
-                                   Имя пользователя
-                        </label>
                         <input class="login-form-input" 
                                type="text" 
-                               id="user--name" 
-                               placeholder="user">
+                               placeholder="user--name">
                     </li>
                     <li class="login-form-list--item">
-                        <label class="login-form-label" 
-                               for="user--password">
-                                   Пароль пользователя
-                        </label>
-                        <input class="login-form-input" 
+                         <input class="login-form-input" 
                                type="password" 
-                               id="user--password" 
-                               placeholder="********">
+                               placeholder="user--password">
                     </li>
                     <li class="login-form-list--item">
                         <button class="login-form-button" 
@@ -121,7 +105,7 @@
                         <button class="login-form-button--registration" 
                                 type="button">
                                     <a class="button--registration-link" 
-                                       href="html/registration.html">
+                                       href="registration.html">
                                             Регистрация
                                     </a>
                         </button>
@@ -139,7 +123,7 @@
           <section class="item">
               <h2 class="item-name">
                   <a class="item-name-link" 
-                      href="html/item-1.html">
+                      href="item-1.html">
                           Horizon zero down PS4
                   </a>
               </h2>
@@ -154,7 +138,7 @@
               </p>
               <button class="item-button--buy">
                    <a class="item-button--buy-link" 
-                      href="html/cart-item-1.html">
+                      href="cart-item-1.html">
                            Купить
                    </a>
                 </button>
@@ -162,7 +146,7 @@
             <section class="item">
                 <h2 class="item-name">
                     <a class="item-name-link"
-                       href="html/item-2.html">
+                       href="item-2.html">
                            Prey PS4
                     </a>
                 </h2>
@@ -170,7 +154,7 @@
                      src="http://storage1.static.itmages.ru/i/17/0516/h_1494953760_4604817_72c72ac300.jpg" 
                      alt="Prey PS4">
                 <p class="item-description">
-                    Знаковый шутер Prey, собравший миллионы фанатов благодаря лихому сюжету и традиционным игровым фишкам, с триумфом возвращается на арену в новом формате. Встречайте Prey Remastering для Playstation 4! 
+                    Знаковый шутер Prey, собравший миллионы фанатов благодаря лихому сюжету и традиционным игровым фишкам, с триумфом возвращается на арену в новом формате.
                 </p>
                 <p class="item-price">
                     Цена: 1650 грн
@@ -185,7 +169,7 @@
             <section class="item">
                 <h2 class="item-name">
                     <a class="item-name-link" 
-                       href="html/item-3.html">
+                       href="item-3.html">
                            Forza Horizon 3 Xbox One
                     </a>
                 </h2>
@@ -208,7 +192,7 @@
             <section class="item">
                 <h2 class="item-name">
                     <a class="item-name-link"
-                       href="html/item-4.html">
+                       href="item-4.html">
                            Gears of War 4 Xbox One
                     </a>
                 </h2>
@@ -231,8 +215,8 @@
             <section class="item">
                 <h2 class="item-name">
                     <a class="item-name-link"
-                       href="html/item-5.html">
-                           The Legend of Zelda Nintendo Switch
+                       href="item-5.html">
+                           The Legend of Zelda Nintendo
                     </a>
                 </h2>
                 <img class="item-picture" 
@@ -254,9 +238,9 @@
             <section class="item">
                 <h2 class="item-name">
                     <a class="item-name-link"
-                       href="html/item-6.html">
-                           Super Bomberman R Nintendo Switch
-                    </a>
+                       href="item-6.html">
+                           Super Bomberman R Nintendo
+                    </a>       
                 </h2>
                 <img class="item-picture" 
                      src="http://storage9.static.itmages.ru/i/17/0516/h_1494953759_4871396_ad19da97b6.jpg" 
@@ -288,7 +272,7 @@
             <h3>Контакты:</h3>
             <ul class="info-contacts-list">
                 <li>
-                    skype: alex_cool38
+                    skype: alex_cool
                 </li>
                 <li>
                     <a class="info-contacts-list-link" 
@@ -306,7 +290,7 @@
         </div>
      </div>
      <footer>
-         Copyright &copy;World Games 2017
+         Copyright &copy; World Games 
      </footer>
   </div>      
 </body>

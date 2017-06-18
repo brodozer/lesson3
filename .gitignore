@@ -1,0 +1,10 @@
+﻿# ignore folder "src"
+/src
+
+#ignore folder "node_modules"
+/node_modules
+
+/package.json
+
+/gulpfile.js
+
