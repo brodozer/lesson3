@@ -1,0 +1,36 @@
+@color--head: lightblue;
+@color--border: darken(@color--head, 15%);
+@margin: 5px;
+@padding: 10px;
+@font--size: 20px;
+
+.wrapper {
+	max-width: 1024px;
+    min-width: 460px;
+    margin: 0 auto;
+    background: url(http://storage4.static.itmages.ru/i/17/0518/h_1495120610_3058981_ab8130d304.jpg); 
+}
+
+.button {
+	padding: @padding - 3;
+	border: 1px solid darken(@color--head, 45%);
+	width: 150px;
+}
+
+.form-group {
+	position: relative;
+    padding: @padding;
+    margin-bottom: @margin * 2;
+    border: 2px solid darken(@color--head, 40%);
+}
+
+.form-label {
+	width: 300px;
+    display: inline-block;
+    float: left;
+}
+
+.input-size {
+	width: 250px;
+    height: 30px;
+}

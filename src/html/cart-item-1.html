@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    	  width="device-width"
+    	  initial-scale="1">
+    <title>Cart Horizon Zero Down PS4</title>
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+        <h1 class="header--logo">
+           World Games
+        </h1>
+        <nav class="header--menu">
+            <ul class="header--menu-main--menu">
+                <li class="main--menu-list--item">
+                    <a class="main--menu-list--item-link" 
+                       href="index.html">
+                         Главная
+                    </a>
+                </li>
+                <li class="main--menu-list--item">
+                    <a class="main--menu-list--item-link"
+                       href="#">
+                         Магазин
+                    </a>
+                       <ul class="main--menu-sub--menu">
+                            <li class="sub--menu-list--item">
+                               <a class="sub--menu-list--item-link" 
+                                  href="#">
+                                     Sony PS4
+                               </a>
+                            </li>
+                            <li class="sub--menu-list--item">
+                               <a class="sub--menu-list--item-link" 
+                                  href="#">
+                                    Xbox One
+                               </a>
+                            </li>
+                           <li class="sub--menu-list--item">
+                               <a class="sub--menu-list--item-link" 
+                                  href="#">
+                                     Nintendo Switch      
+                               </a>
+                           </li>
+                       </ul>
+                </li>
+                <li class="main--menu-list--item">
+                    <a class="main--menu-list--item-link" 
+                       href="#">
+                        О нас
+                    </a>
+                </li>
+                <li class="main--menu-list--item">
+                    <a class="main--menu-list--item-link" 
+                       href="#">
+                        Контакты
+                    </a>
+                </li>
+                <li class="main--menu-list--item">
+                    <a class="main--menu-list--item-link" 
+                    href="admin.html">
+                        Administrator
+                    </a>
+                    	<ul class="main--menu-admin--menu">
+                    		<li class="admin--menu-list--item">
+                    			<a class="admin--menu-list--item-link" 
+                    			   href="add-item.html">
+                    			   Add Item
+                    			</a>
+                    		</li>
+                    		<li class="admin--menu-list--item">
+                    			<a class="admin--menu-list--item-link" 
+                                   href="list-item.html">
+                                   List Item
+                                </a>
+                            </li>
+                    	</ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="header--login">
+            <form action="#">
+                <ul class="login-form">
+                    <li class="login-form-list--item">
+                        <input class="login-form-input" 
+                               type="text" 
+                               placeholder="user--name">
+                    </li>
+                    <li class="login-form-list--item">
+                         <input class="login-form-input" 
+                               type="password" 
+                               placeholder="user--password">
+                    </li>
+                    <li class="login-form-list--item">
+                        <button class="login-form-button" 
+                                type="submit">
+                                    Вход
+                        </button>
+                        <button class="login-form-button--registration" 
+                                type="button">
+                                    <a class="button--registration-link" 
+                                       href="registration.html">
+                                            Регистрация
+                                    </a>
+                        </button>
+                    </li>
+                </ul>  
+            </form>
+        </div>
+        <div class="header--cart">
+        	<a class="cart-link" href="#">
+        	   Корзина
+        	</a>
+        </div>
+    </header>
+    <main>
+    	<table class="table--cart">
+    		<caption class="table--name">
+    			Корзина 
+    		</caption>
+    		<tr class="table--cart-row">
+    			<th class="table--cart-head">
+    				Фото
+    			</th>
+    			<th class="table--cart-head">
+    				Наименование
+    			</th>
+    			<th class="table--cart-head">
+    				Кол-во
+    			</th>
+    			<th class="table--cart-head">
+    				Цена
+    			</th>
+    			<th class="table--cart-head">
+    				Стоимость
+    			</th>
+    			<th class="table--cart-head">
+    				Удалить
+    			</th>
+    		</tr>
+    		<tr class="table--cart-row">
+    			<td class="table--cart-data">
+    				<img class="table-item--image"
+   				         src="http://storage1.static.itmages.ru/i/17/0516/h_1494953760_1208745_c4391c2ce1.jpeg" 
+    				     alt="horizon zero down ps4">
+    			</td>
+    			<td class="table--cart-data">
+    				Horizon Zero Down PS4
+    			</td>
+    			<td class="table--cart-data">
+    				<ul class="quantity-list">
+    					<li class="quantity-list--item">-</li>
+    					<li class="quantity-list--item-volue">1</li>
+    					<li class="quantity-list--item">+</li>
+    				</ul>
+    			</td>
+    			<td class="table--cart-data">
+    				1370 грн
+    			</td>
+    			<td class="table--cart-data">
+    				1370 грн
+    			</td>
+    			<td class="table--cart-data">
+    				<button class="table-button--delete">	
+  				        <img class="table-button--logo"
+   				         	 src="http://storage6.static.itmages.ru/i/17/0607/h_1496849245_7640089_eda84eb0a9.png" 
+    				     	 alt="trash">
+    				     	 Delete
+    				</button>     	 
+    			</td>
+    		</tr>
+    	</table>
+    	<form action="">
+    		<h2 class="basic-info">
+    			Информация о Вас
+    		</h2>
+    		<div class="form-group">
+                <label class="form-group-label" 
+                       for="first--name">
+                          Имя:
+                </label>
+                <input class="form-group-input" 
+                       type="text" 
+                       id="first--name" 
+                       value="Александр" 
+                       required>
+            </div>
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="last--name">
+                          Фамилия:
+                </label>
+                <input class="form-group-input" 
+                       type="text" 
+                       id="last--name" 
+                       value="Перепелица"
+                       required>
+            </div>
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="email">
+                           E-mail:
+                </label>
+                <input class="form-group-input" 
+                       type="email"
+                       id="email"
+                       value="perepelitsa.alex@gmail.com"
+                       required>
+            </div>
+            <div class="form-group">
+                <label class="form-group-label"
+                       for="usrtel">
+                           Телефон:
+                </label>
+                <input class="form-group-input"  
+                       type="tel"
+                       id="usrtel"
+                       value="+380934109304"
+                       required>
+            </div>
+            <h2 class="delivery-payment">
+            	Доставка и оплата
+            </h2>
+            <div class="form-group">
+            	<span class="form-group-radio">
+            		Выберите способ доставки:
+            	</span>
+            	<label for="delivery-nova-poshta"> 
+            		   Новая почта	
+            	</label>
+            	<input type="radio" 
+            	       name="delivery"
+            	       value="nova-poshta"
+            	       checked
+            	       id="delivery-nova-poshta">
+            	<label for="delivery-ukr-poshta"> 
+            		   Укрпочта	
+            	</label>       
+            	<input type="radio" 
+            	       name="delivery"
+            	       value="ukr-poshta"
+            	       id="delivery-ukr-poshta">     
+            </div>
+            <div class="form-group">
+                <label class="form-group-label"
+                       for="town">
+                       Город  
+                </label>
+                <input class="form-group-input" 
+                       type="text" 
+                       id="town" 
+                       value="Рубежное" 
+                       required>
+            </div>
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="warehouse">
+                          Отделение/склад 
+                </label>
+                <input class="form-group-input" 
+                       type="number" 
+                       id="warehouse" 
+                       value="2" 
+                       required>
+            </div>
+            <div class="form-group">
+                <span class="form-group-radio">
+                	Выберите способ оплаты:
+                </span>
+            	<label for="payment-card">
+            		Приват 24
+				</label>        
+            	<input type="radio" 
+            	       name="payment"
+            	       value="card-bank"
+            	       checked
+            	       id="payment-card">
+            	<label for="payment-cash">
+            		Наложенный платеж    
+				</label>  
+           	    <input type="radio" 
+            	       name="payment"
+            	       value="cash"
+            	       id="payment-cash">      
+            </div>
+            <button class="form-group-button"
+            		type="submit">
+            	Оформить
+            </button>
+    	</form>
+    </main>
+    <footer>
+         Copyright &copy;World Games 2017
+    </footer>
+   </div>       
+</body>
+
+</html>

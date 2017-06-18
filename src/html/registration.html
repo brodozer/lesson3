@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="../css/registration.css">
+</head>
+
+  <body>
+    <div class="wrapper">
+      <main>
+        <h1 class="form--name">Registration Form</h1>
+        <form action="#">
+            <h2 class="form-group-name">Основная информация</h2>
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="first--name">
+                       Имя:
+                </label>
+                <input class="form-group-input" 
+                       type="text" 
+                       id="first--name" 
+                       placeholder="First Name"
+                       required>
+            </div>
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="last--name">
+                       Фамилия:
+                </label>
+                <input class="form-group-input" 
+                       type="text" 
+                       id="last--name" 
+                       placeholder="Last Name"
+                       required>
+            </div>
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="email">
+                       E-mail:
+                </label>
+                <input class="form-group-input" 
+                       type="email"
+                       id="email"
+                       placeholder="user@gmail.com"
+                       required>
+            </div>
+            <div class="form-group">
+                <label class="form-group-label"
+                       for="usrtel">
+                       Телефон:
+                </label>
+                <input class="form-group-input"  
+                       type="tel"
+                       id="usrtel"
+                       placeholder="+38 (0xx) xxx xx xx"
+                       required>
+            </div>
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="item-picture">
+                       Download Avatar:
+                </label>
+                <input class="form-group-input" 
+                       type="file" 
+                       accept=".jpg, .png">
+            </div>
+            <h2 class="form-group-name">Адрес</h2>
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="address">
+                       Адрес
+                </label>
+                <input class="form-group-input" 
+                       type="text" 
+                       id="address" 
+                       placeholder="ул. Менделеева 5/16"
+                       required>
+            </div>
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="town">
+                       Город
+                </label>
+                <input class="form-group-input" 
+                       type="text" 
+                       id="town" 
+                       placeholder="Рубежное"
+                       required>
+            </div>
+            <div class="form-group">
+                <label class="form-group-label" 
+                       for="country">
+                       Страна
+                </label>
+                <select class="form-group-select" 
+                        name="country"
+                        id="country">
+                    <option value="Ukraine">Украина</option>        
+                    <option value="Poland">Польша</option>        
+                    <option value="Belarus">Беларусь</option>        
+                    <option value="Latvia">Латвия</option>        
+                    <option value="Belgium">Бельгия</option>        
+                    <option value="Croatia">Хорватия</option>        
+                    <option value="Russia">Россия</option>        
+                    <option value="Italy">Италия</option>        
+                    <option value="Spain">Испания</option>        
+                    <option value="Bulgaria">Болгария</option>        
+                    <option value="United-Kingdom">Великобритания</option>        
+                    <option value="Finland">Финляндия</option>        
+                </select>       
+            </div>
+            <h2 class="form-group-name">Пароль</h2>
+            <div class="form-group"> 
+                <label class="form-group-label"
+                       for="psw">
+                       Пароль
+                </label>
+                <input class="form-group-input"
+                       type="password"
+                       id="psw"
+                       placeholder="**********"
+                       requires>
+            </div>
+            <div class="form-group"> 
+                <label class="form-group-label"
+                       for="confirm-psw">
+                       Подтвердите пароль
+                </label>
+                <input class="form-group-input"
+                       type="password"
+                       id="confirm-psw"
+                       placeholder="**********"
+                       requires>
+            </div>
+            <button class="form-group-button" 
+                    type="submit">
+                    registration
+            </button>
+        </form>
+     </main>
+   </div>    
+ </body>
+
+</html>
