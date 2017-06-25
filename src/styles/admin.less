@@ -1,0 +1,102 @@
+@import "mixin.less";
+
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+*:focus {
+    outline: none;
+}
+
+.wrapper {
+	.wrapper;
+}
+
+main {
+    margin: 0 auto;
+    width: 85%;
+    padding: @padding * 2 @padding * 3;
+    background: @color--head;
+}
+
+.form-name {
+    text-align: center;
+    font-style: italic;
+    font-size: @font--size;
+    margin-bottom: @margin * 4;
+}
+
+.form-group {
+    position: relative;
+    padding: @padding;
+    margin-bottom: @margin * 2;
+    border: 2px solid darken(@color--head, 40%); 
+
+        &-label {
+            width: 300px;
+            display: inline-block;
+            float: left;
+        }
+
+        &-input {
+            .input-size (250px, 30px);
+
+                &:focus:invalid {
+                    border-color: lightcoral;
+                }  
+
+                &:required:valid {
+                    border-color: lightgreen;
+                }      
+        }
+
+        &-button {
+            .button;
+            margin-left: 318px;
+            font-weight: bold;
+            font-size: @font--size - 5;
+        } 
+
+        &-textarea {
+            padding: @padding - 5;
+            width: 500px;
+            border: solid 2px @color--border;    
+        }  
+}
+
+.image--item-wrapper {
+	position: relative;
+	display: inline-block;
+}
+
+.button--delete-image--item,
+.button--settings-image--item {
+	border-radius: 5px;
+	position: absolute;
+}
+
+.button--delete-image--item {
+	.position (5px, 5px);
+}
+
+.button--settings-image--item {
+	.position (5px, 40px);
+}
+
+@media screen and (min-width: 460px) and (max-width: 768px) {
+	
+    .form-group {
+        &-label {
+            padding-bottom: @padding - 5;    
+        }
+
+        &-textarea {
+            width: 90%;
+        } 
+
+        &-button {
+            margin-left: 0;    
+        }
+    }
+}

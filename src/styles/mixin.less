@@ -11,26 +11,30 @@
     background: url(http://storage4.static.itmages.ru/i/17/0518/h_1495120610_3058981_ab8130d304.jpg); 
 }
 
+.menu-drop-down (@v, @t, @o) {
+    visibility: @v;
+    top: @t;
+    opacity: @o;
+}
+
+.link (@display, @td, @color) {
+    display: @display;
+    text-decoration: @td;
+    color: @color;
+}
+
 .button {
 	padding: @padding - 3;
 	border: 1px solid darken(@color--head, 45%);
 	width: 150px;
 }
 
-.form-group {
-	position: relative;
-    padding: @padding;
-    margin-bottom: @margin * 2;
-    border: 2px solid darken(@color--head, 40%);
+.input-size (@w, @h) {
+    width: @w;
+    height: @h;
 }
 
-.form-label {
-	width: 300px;
-    display: inline-block;
-    float: left;
-}
-
-.input-size {
-	width: 250px;
-    height: 30px;
+.position (@top, @right) {
+    top: @top;
+    right: @right;
 }

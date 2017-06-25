@@ -1,28 +1,27 @@
-var gulp = require('gulp'),
-	less = require('gulp-less'),
-	autoprefixer = require('gulp-autoprefixer'),
-	rigger = require('gulp-rigger'),
-	livereload = require('gulp-livereload'),
-	connect = require('gulp-connect'),
-	cleanCSS = require('gulp-clean-css'),
-	watch = require('gulp-watch'),
-	server = require('browser-sync'),
-	reload = server.reload;
+var gulp = require('gulp');
+var	less = require('gulp-less');
+var	autoprefixer = require('gulp-autoprefixer');
+var	rigger = require('gulp-rigger');
+var	livereload = require('gulp-livereload');
+var	connect = require('gulp-connect');
+var	cleanCSS = require('gulp-clean-css');
+var	watch = require('gulp-watch');
+var	server = require('browser-sync');
+var	reload = server.reload;
 
 gulp.task('server', function() {
     server.init({
         server: {
             baseDir: "./build"
         },
-		startPath: "/html/index.html",
-		tunnel: true,
-		port: 9000,
-		logPrefix: "front_end"
+			tunnel: true,
+			port: 9000,
+			logPrefix: "front_end"
     });
 });
 
 gulp.task('css', function () {
-    gulp.src('src/style/*.less')
+        gulp.src('src/styles/*.less')
     	.pipe(less())
     	.pipe(autoprefixer({
             browsers: ['last 2 versions'],
@@ -34,13 +33,13 @@ gulp.task('css', function () {
 });
 
 gulp.task('html', function() {
-	gulp.src('src/html/*.html')
+		gulp.src('src/html/*.html')
         .pipe(gulp.dest('build/html/'))
         .pipe(reload({stream: true}));
 });
 
 gulp.task('watch', function() {
-	gulp.watch('src/style/*.less', ['css']);
+	gulp.watch('src/styles/*.less', ['css']);
 	gulp.watch('src/html/*.html', ['html']);
 });
 

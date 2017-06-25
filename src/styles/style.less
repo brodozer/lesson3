@@ -1,0 +1,173 @@
+@import "mixin.less";
+@import "header.less";
+	
+main {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.item {
+	margin-bottom: @margin * 6;
+    width: 320px;
+    border: 4px solid @color--border;
+    text-align: center;
+    background: @color--head;
+
+        &-picture {
+            width: 300px;
+            height: 400px;
+            margin-bottom: @margin * 2;
+            border: 2px solid @color--border;
+        }
+
+        &-description {
+            margin: 0 @margin @margin*2;
+            padding: @margin;
+            height: 100px;
+            color: darken(@color--head, 60%);
+            border: 2px solid @color--border;
+        }
+
+        &-price {
+            margin-bottom: @margin * 2;
+            font-weight: bold;
+            font-size: @font--size;
+            color: darken(@color--head, 50%); 
+        }
+}
+
+.item-name-link,
+.item-button--buy-link {
+    display: block;
+    text-decoration: none;
+    color: darken(@color--head, 50%); 
+            
+        &:hover {
+            color: darken(@color--head, 40%);
+        }
+}
+
+.item-button--buy-link {
+    font-size: @font--size + 5;
+    font-weight: bold;
+    width: 150px;
+}
+
+.info {
+    display: flex;;
+    margin-bottom: @margin * 4;
+	color: lighten(@color--head, 30%);
+	background: @color--head;
+
+        &-address,
+        &-contacts {
+            width: 50%;
+            padding: @padding - 5 @padding * 5;    
+            
+            &-list {
+                list-style: none;    
+            
+                &-link {
+                    text-decoration: none;
+                    color: lighten(@color--head, 25%);    
+                    
+                    &:hover {
+                        text-decoration: underline;    
+                    }   
+                }
+            }
+        }
+}
+
+.info-contacts {
+    text-align: right;
+}
+
+footer {
+    background: @color--head;
+    padding: @padding * 3;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    .header {
+        flex-direction: column;
+
+            &--logo {
+                font-size: @font--size * 2;
+                text-shadow: 3px 3px 5px rgb(0,0,0);    
+            }
+
+            &--menu {
+                margin-bottom: @margin * 2;    
+            }
+
+            &--cart {
+                position: absolute;
+                top: 105px;
+                right: 20px;
+            }
+    } 
+    
+    .item {
+        width: 360px;
+    }
+}
+
+@media screen and (min-width: 460px) and (max-width: 768px) {
+    
+    .header{
+        display: block;
+
+            &:after {
+                content: '';
+                display: table;
+                clear: both;
+            }
+
+            &--logo {
+                font-size: @font--size * 2;
+                text-shadow: 3px 3px 5px rgb(0,0,0);
+                margin-bottom: @margin * 2;
+            }
+        
+            &--login {
+                float: left;
+            }
+        
+            &--cart {
+                float: right;
+            }
+    }        
+        
+    .main--menu {
+        display: block;
+        margin-bottom: @margin;
+        width: 100%;
+
+            &-list--item {
+                margin-bottom: @margin - 1;
+                           
+                    &-link {
+                        text-align: center;
+                        border: 1px solid darken(@color--head, 10);        
+                    }        
+                         
+                    &-link--active {
+                        text-align: center;
+                    }                 
+
+                    &-sub--menu,
+                    &-admin--menu {
+                        left: 300px;
+                        z-index: 1;   
+                    }        
+            }                                       
+    } 
+
+    .item {
+        width: 460px;
+    }
+}

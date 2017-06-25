@@ -1,0 +1,119 @@
+@import "mixin.less";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    .wrapper;
+}
+    
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: @padding * 2;
+    padding-top: 0;
+    margin-bottom: @margin * 4;
+    background: @color--head;
+
+        &--logo {
+            width: 100%;
+            color: darken(@color--head, 25%);
+            font-family: Arial;
+            font-size: @font--size * 3;
+            letter-spacing: 25px;
+            text-transform: uppercase;
+            text-align: center;
+            text-shadow: 5px 5px 10px rgb(0,0,0);
+        }
+}
+
+.main--menu {
+    display: flex;
+	list-style: none;
+
+        &-list--item {
+            margin-right: @margin;
+            position: relative;
+        
+                &-sub--menu,
+                &-admin--menu {
+                    .menu-drop-down (hidden, 400%, 0);
+                    width: 150px;
+                    list-style: none;
+                    position: absolute;
+                    z-index: 1;
+                    border: 2px solid darken(@color--head, 25%);
+                    left: 5px;
+                    transition: all 300ms ease;
+                    background: darken(@color--head, 50%);    
+                }  
+
+                &:hover .main--menu-list--item-sub--menu {
+                    .menu-drop-down (visible, 100%, 1);   
+                }
+
+                &:hover .main--menu-list--item-admin--menu {
+                    .menu-drop-down (visible, 100%, 1);   
+                } 
+        }
+}
+
+.main--menu-list--item-link,
+.main--menu-list--item-link--active,
+.sub--menu-list--item-link,
+.admin--menu-list--item-link {
+    .link (block, none, lighten(@color--head, 30%));
+    padding: @padding @padding * 2;
+    font-size: @font--size - 2;
+    text-align: left;
+
+        &:hover {
+            background-color: darken(@color--head, 40%);
+        }
+}
+
+.main--menu-list--item-link--active {
+    background-color: darken(@color--head, 40%);
+}
+
+.login--form {
+    list-style: none;
+    list-style-position: outside;
+    text-align: left;
+
+        &-li {
+            margin-bottom: @margin - 2;
+            position: relative;
+            
+            &-input {
+                .input-size (200px, 20px);
+            }
+
+            &-button,
+            &-button--registration {
+                width: 100px;
+             }
+
+            &-button--registration-link {
+                .link (block, none, darken(@color--head, 90%));    
+            }
+        }
+}
+
+.cart-link {
+    .link (block, none, lighten(@color--head, 30%));
+    padding-top: @padding *5;
+    text-align: center;
+    background: url(http://storage8.static.itmages.ru/i/17/0605/h_1496696388_7047286_2ef2050a5b.png) 
+                no-repeat 
+                center 
+                top;    
+    background-size: 50px 60px;
+
+        &:hover {
+            transform: scale(1.1,1.1);    
+        }
+}
