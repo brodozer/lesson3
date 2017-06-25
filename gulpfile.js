@@ -1,4 +1,4 @@
-var gulp = require('gulp');
+var     gulp = require('gulp');
 var	less = require('gulp-less');
 var	autoprefixer = require('gulp-autoprefixer');
 var	rigger = require('gulp-rigger');
@@ -14,9 +14,9 @@ gulp.task('server', function() {
         server: {
             baseDir: "./build"
         },
-			tunnel: true,
-			port: 9000,
-			logPrefix: "front_end"
+	    tunnel: true,
+	    port: 9000,
+            logPrefix: "front_end"
     });
 });
 
@@ -33,7 +33,7 @@ gulp.task('css', function () {
 });
 
 gulp.task('html', function() {
-		gulp.src('src/html/*.html')
+	gulp.src('src/html/*.html')
         .pipe(gulp.dest('build/html/'))
         .pipe(reload({stream: true}));
 });
